@@ -25,5 +25,5 @@ let testData = [
     Heroes(name: "Asa Noturna", headline: "is simply dummy text", bio: "s simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."),
     Heroes(name: "Capita Marvel", headline: "is simply dummy text", bio: "s simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."),
     Heroes(name: "Mulher Maravilha", headline: "is simply dummy text", bio: "s simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."),
-    Heroes(name: "Homem de Ferro", headline: "Passionate iOS Developer", bio: "s simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."),
+    Heroes(name: "Homem de Ferro", headline: "is simply dummy text", bio: "s simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."),
 ]

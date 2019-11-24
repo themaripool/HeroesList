@@ -15,6 +15,7 @@
 		1AED28F4238AD4BD00EE8948 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AED28F3238AD4BD00EE8948 /* Preview Assets.xcassets */; };
 		1AED28F7238AD4BD00EE8948 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AED28F5238AD4BD00EE8948 /* LaunchScreen.storyboard */; };
 		1AED28FF238AD55F00EE8948 /* Heroes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AED28FE238AD55F00EE8948 /* Heroes.swift */; };
+		1AED2901238AF29800EE8948 /* HeroesDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AED2900238AF29800EE8948 /* HeroesDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		1AED28F6238AD4BD00EE8948 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1AED28F8238AD4BD00EE8948 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1AED28FE238AD55F00EE8948 /* Heroes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heroes.swift; sourceTree = "<group>"; };
+		1AED2900238AF29800EE8948 /* HeroesDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				1AED28E7238AD4BC00EE8948 /* AppDelegate.swift */,
 				1AED28E9238AD4BC00EE8948 /* SceneDelegate.swift */,
 				1AED28EE238AD4BC00EE8948 /* ContentView.swift */,
+				1AED2900238AF29800EE8948 /* HeroesDetail.swift */,
 				1AED28F0238AD4BD00EE8948 /* Assets.xcassets */,
 				1AED28F5238AD4BD00EE8948 /* LaunchScreen.storyboard */,
 				1AED28F8238AD4BD00EE8948 /* Info.plist */,
@@ -152,6 +155,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AED2901238AF29800EE8948 /* HeroesDetail.swift in Sources */,
 				1AED28E8238AD4BC00EE8948 /* AppDelegate.swift in Sources */,
 				1AED28EA238AD4BC00EE8948 /* SceneDelegate.swift in Sources */,
 				1AED28EF238AD4BC00EE8948 /* ContentView.swift in Sources */,

@@ -15,28 +15,11 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
              List(heroes) { hero in
-                       HStack {
-                           Image(hero.imageName)
-                               .resizable()
-                               .aspectRatio(CGSize(width: 0.1, height: 0.1), contentMode: .fit)
-                               .cornerRadius(100)
-                           
-                           VStack(alignment: .leading) {
-                               Text(hero.name)
-                                   .font(.title)
-                                   .fontWeight(.bold)
-                                   .foregroundColor(Color.yellow)
-                               
-                               HStack {
-                                   Text(hero.headline)
-                                       .font(.subheadline)
-                                   Spacer()
-                               }
-                           }
-                           .padding()
-                       }
-                   }
-             .navigationBarTitle("Heroes")
+                
+                HeroCell(hero: hero)
+                       
+            }
+            .navigationBarTitle("Heroes")
         }
        
     }
@@ -45,5 +28,35 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView(heroes: testData)
+    }
+}
+
+struct HeroCell: View {
+    let hero: Heroes
+    var body: some View {
+        NavigationLink(destination: HeroesDetail(name: hero.name, headline: hero.headline, bio: hero.bio)) {
+            
+            Image(hero.imageName)
+                .resizable()
+                .aspectRatio(CGSize(width: 0.1, height: 0.1), contentMode: .fit)
+                .cornerRadius(100)
+                .overlay(Circle().stroke(Color.black, lineWidth: 4))
+                .shadow(radius: 10)
+            
+            VStack(alignment: .leading) {
+                Text(hero.name)
+                    .font(.title)
+                    .fontWeight(.bold)
+                    .foregroundColor(Color.yellow)
+                
+                HStack {
+                    Text(hero.headline)
+                        .font(.subheadline)
+                    Spacer()
+                }
+            }
+            .padding()
+        }
+        .navigationBarTitle("Personagens")
     }
 }
