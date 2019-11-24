@@ -13,27 +13,32 @@ struct ContentView: View {
     var heroes: [Heroes] = []
     
     var body: some View {
-        List(heroes) { hero in
-            HStack {
-                Image(hero.imageName)
-                    .resizable()
-                    .aspectRatio(CGSize(width: 0.1, height: 0.1), contentMode: .fill)
-                
-                VStack(alignment: .leading) {
-                    Text(hero.name)
-                        .font(.title)
-                        .fontWeight(.bold)
-                        .foregroundColor(Color.yellow)
-                    
-                    HStack {
-                        Text(hero.headline)
-                            .font(.subheadline)
-                        Spacer()
-                    }
-                }
-                .padding()
-            }
+        NavigationView {
+             List(heroes) { hero in
+                       HStack {
+                           Image(hero.imageName)
+                               .resizable()
+                               .aspectRatio(CGSize(width: 0.1, height: 0.1), contentMode: .fit)
+                               .cornerRadius(100)
+                           
+                           VStack(alignment: .leading) {
+                               Text(hero.name)
+                                   .font(.title)
+                                   .fontWeight(.bold)
+                                   .foregroundColor(Color.yellow)
+                               
+                               HStack {
+                                   Text(hero.headline)
+                                       .font(.subheadline)
+                                   Spacer()
+                               }
+                           }
+                           .padding()
+                       }
+                   }
+             .navigationBarTitle("Heroes")
         }
+       
     }
 }
 
