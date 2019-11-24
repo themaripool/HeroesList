@@ -1,4 +1,4 @@
-# HeroesList
+# HeroesList with SwiftUI
 Simple List with a detail view using Swift UI 
 
 <h3>Final Project Image<h3>
