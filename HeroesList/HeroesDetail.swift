@@ -37,7 +37,7 @@ struct HeroesDetail: View {
                 Text(bio)
                 .font(.headline)
                 .multilineTextAlignment(.center)
-                .lineLimit(50)
+                .lineLimit(100)
                     
             
             Spacer()
